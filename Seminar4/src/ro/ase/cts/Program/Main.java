@@ -1,5 +1,6 @@
 package ro.ase.cts.Program;
 
+import ro.ase.cts.Clase.Arbore;
 import ro.ase.cts.Clase.Parlament;
 import ro.ase.cts.Clase.ParlamentLazy;
 
@@ -24,5 +25,11 @@ public class Main {
 
         System.out.println(parlamentLazy1.toString());
         System.out.println(parlamentLazy2.toString());
+
+        Arbore arbore1 = Arbore.getInstance("Sequia", 22, 40.4);
+        Arbore arbore2 = Arbore.getInstance("Mar", 30, 40.2);
+
+        System.out.println(arbore1.toString());
+        System.out.println(arbore2.toString());
     }
 }
