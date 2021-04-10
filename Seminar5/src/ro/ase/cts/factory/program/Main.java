@@ -1,6 +1,6 @@
 package ro.ase.cts.factory.program;
 
-import ro.ase.cts.Clase.FactorySingleton;
+import ro.ase.cts.Adapter.Clase.FactorySingleton;
 import ro.ase.cts.factory.clase.*;
 
 public class Main {
