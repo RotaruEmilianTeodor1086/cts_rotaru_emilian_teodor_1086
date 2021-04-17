@@ -1,4 +1,4 @@
-package ro.ase.cts.Clase;
+package ro.ase.cts.Facade.Clase;
 
 public class Masa {
     private int nrMasa;

@@ -1,7 +1,7 @@
-package ro.ase.cts.Program;
+package ro.ase.cts.Facade.Program;
 
-import ro.ase.cts.Clase.Facade;
-import ro.ase.cts.Clase.Masa;
+import ro.ase.cts.Facade.Clase.Facade;
+import ro.ase.cts.Facade.Clase.Masa;
 
 public class Main {
     public static void main(String[] args) {

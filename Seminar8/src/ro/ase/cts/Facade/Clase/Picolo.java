@@ -1,4 +1,4 @@
-package ro.ase.cts.Clase;
+package ro.ase.cts.Facade.Clase;
 
 class Picolo {
     private String nume;
