@@ -1,5 +1,5 @@
 package ro.ase.cts.proxy.clase;
 
 public interface OperatorRezervare {
-    void rezerva(int nrPersoane);
+    public void rezerva(int nrPersoane);
 }

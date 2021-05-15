@@ -11,7 +11,6 @@ public class BuilderRezervare implements AbstractBuilder{
         this.rezervare = new Rezervare(0, false, false, false, false, "nimic");
     }
 
-
     public BuilderRezervare setCodRezervare(int codRezervare) {
         this.rezervare.setCodRezervare(codRezervare);
         return this;

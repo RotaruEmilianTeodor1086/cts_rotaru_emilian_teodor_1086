@@ -8,7 +8,7 @@ public class Main {
         ManagerRezervari manager = new ManagerRezervari("Isoletta");
         manager.rezerva(2);
         ProxyRezervari proxyManager = new ProxyRezervari(manager,4);
-        proxyManager.rezerva(3);
-        proxyManager.rezerva(5);
+        proxyManager.rezerva(2);
+        proxyManager.rezerva(4);
     }
 }

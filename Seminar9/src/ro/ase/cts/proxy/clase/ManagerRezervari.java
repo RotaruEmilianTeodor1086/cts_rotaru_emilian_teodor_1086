@@ -17,9 +17,6 @@ public class ManagerRezervari implements OperatorRezervare {
 
     @Override
     public void rezerva(int nrPersoane) {
-        StringBuilder builder = new StringBuilder();
-        builder.append("A fost realizata o rezervare la restaurantul ").append(this.numeLocal).append(" pentru ")
-                .append(nrPersoane).append(" persoane.");
-        System.out.println(builder);
+        System.out.println("A fost realizata o rezervare la restaurantul " + this.numeLocal + " pentru " + nrPersoane + " persoane");
     }
 }
