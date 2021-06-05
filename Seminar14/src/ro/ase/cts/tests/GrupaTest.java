@@ -2,8 +2,12 @@ package ro.ase.cts.tests;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.experimental.categories.Category;
 import org.testng.annotations.Test;
 import ro.ase.cts.clase.Grupa;
+import ro.ase.cts.clase.StudentStub;
+import ro.ase.cts.clase.categories.TesteRight;
+import ro.ase.cts.clase.categories.TesteUrgente;
 import ro.ase.cts.mock.StudentDummy;
 
 import static org.junit.Assert.*;
@@ -12,6 +16,7 @@ public class GrupaTest {
     private static Grupa grupa;
 
     @Test
+    @Category({TesteRight.class, TesteUrgente.class})
     public void testConstructorRight() {
         Grupa grupa = new Grupa(1086);
         assertEquals(1086, grupa.getNrGrupa());
@@ -30,6 +35,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorExceptie() {
         assertThrows(IllegalArgumentException.class, () -> {new Grupa(900);});
     }
@@ -69,6 +75,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void adaugaStudentBoundarySuperior() {
         Grupa grupa = new Grupa(1086);
 
@@ -93,5 +100,13 @@ public class GrupaTest {
 //        StudentDummy studentDummy = new StudentDummy();
 //        grupa.adaugaStudent(studentDummy);
 //    }
+
+    @Test
+    public void testPromovabilitate() {
+        Grupa grupa = new Grupa(1086);
+        StudentStub studentStub = new StudentStub();
+        grupa.adaugaStudent(studentStub);
+        assertEquals(0, grupa.getPromovabilitate(), 0.01);
+    }
 
 }

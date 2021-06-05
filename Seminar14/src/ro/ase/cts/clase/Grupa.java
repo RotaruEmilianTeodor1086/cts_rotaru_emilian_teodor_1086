@@ -48,7 +48,7 @@ public class Grupa {
                 nrRestantieri++;
             }
         }
-        return studenti.size()/nrRestantieri;
+        return (float)(this.studenti.size() - nrRestantieri)/this.studenti.size();
     }
 
     public List<IStudent> getStudenti() {
