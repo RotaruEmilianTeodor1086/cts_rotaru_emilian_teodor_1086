@@ -1,4 +1,4 @@
-package clase;
+package ro.ase.cts.clase;
 
 import java.util.List;
 

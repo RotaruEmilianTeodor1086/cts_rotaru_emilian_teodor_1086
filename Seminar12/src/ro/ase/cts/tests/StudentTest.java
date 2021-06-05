@@ -1,6 +1,6 @@
-package tests;
+package ro.ase.cts.tests;
 
-import clase.Student;
+import ro.ase.cts.clase.Student;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
